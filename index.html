@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Josh Chen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/0aecda28ba.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1>Josh Chen</h1>
+        <a class="btn btn-white btn-round" href="#projects" role="button">See Projects</a>
+    </header>
+    <main role="main">
+        <div class="container-fluid">
+            <section id="about">
+                <div class="row mb-5">
+                    <div class="col-lg-12">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p>I'm a high school student who enjoys programming. I have 3 years of experience in Python making web apps and ML models.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="languages">
+                            <img src="images/python.png" alt="Python Logo" width="200">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="text-white">Projects</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="images/ColorMyPhoto.png" alt="ColorMyPhoto" class="card-img-top">
+                            <h3 class="title-card">ColorMyPhoto</h3>
+                            <div class="card-body">
+                                <p class="card-text">A coloring page app that turns a photo into a coloring page.
+                                Fill in the page using a paint bucket tool and a brush tool.</p>
+                                <div class="card-btn">
+                                    <button class="btn btn-round btn-primary" onclick="togglePopup('popup-1',true)">Demo</button>
+                                    <a href="https://github.com/joshchen984/Turn-Photo-into-Coloring-Page" class="btn btn-round btn-primary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="images/Text2Video.png" alt="Text2Video" class="card-img-top">
+                            <h3 class="title-card">Text2Video</h3>
+                            <div class="card-body">
+                                <p class="card-text">A web app that turns a story written by the user into a full video with images and audio.</p>
+                                <div class="card-btn">
+                                    <button class="btn btn-round btn-primary" onclick="togglePopup('popup-2',true)">Demo</button>
+                                    <a href="https://github.com/joshchen984/Text2Video" class="btn btn-round btn-primary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="icons">
+                <a href="https://github.com/joshchen984" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            </div>
+            <a href="https://github.com/joshchen984" target="_blank" rel="noopener noreferrer">Site made by Josh Chen</a>
+        </div>
+    </footer>
+    <!--Project demo popups-->
+    <div class="popup" id="popup-1" onclick="togglePopup('popup-1', false)">
+        <img class="popup-content" src="images/ColorMyPhoto.gif" alt="ColorMyPhoto">
+    </div>
+    <div class="popup" id="popup-2" onclick="togglePopup('popup-2', false)">
+        <img class="popup-content" src="images/Text2Video.gif" alt="Text2Video">
+    </div>
+
+</body>
+</html>
