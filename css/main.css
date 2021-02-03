@@ -12,16 +12,16 @@ h1,h2,h3,h4,h5{
     font-family: 'Raleway', sans-serif;
 }
 #header {
+    position: relative;
     margin:0px;
     padding:0px;
-    background-image: url("../images/cyberpunk.gif");
     text-align: center;
     height:100vh;
-    background-size: cover;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow:hidden;
 }
 #header h1{
     font-size: 8em;
@@ -31,6 +31,20 @@ h1,h2,h3,h4,h5{
 #header a{
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
+}
+#homeVideo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index:-1;
 }
 
 .btn-round{
