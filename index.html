@@ -28,7 +28,7 @@
 </head>
 <body>
     <header id="header">
-        <video autoplay muted loop playsinline id="homeVideo">
+        <video autoplay muted loop playsinline poster="images/cyberpunk.jpg" id="homeVideo">
             <source src="images/cyberpunk.mp4">
         </video>
         <h1>Josh Chen</h1>
@@ -101,13 +101,15 @@
         </div>
     </footer>
     <!--Project demo popups-->
-    <div class="popup" id="popup-1" onclick="togglePopup('popup-1', false)">
-        <video autoplay muted loop class="popup-content">
+    <div class="popup" id="popup-1">
+        <div class="exit-popup" onclick="togglePopup('popup-1', false)"></div>
+        <video autoplay muted loop playsinline controls class="popup-content">
             <source src="images/ColorMyPhoto.mp4">
         </video>
     </div>
-    <div class="popup" id="popup-2" onclick="togglePopup('popup-2', false)">
-        <video autoplay muted loop class="popup-content">
+    <div class="popup" id="popup-2">
+        <div class="exit-popup" onclick="togglePopup('popup-2', false)"></div>
+        <video autoplay muted loop playsinline controls class="popup-content">
             <source src="images/Text2Video.mp4">
         </video>
     </div>
