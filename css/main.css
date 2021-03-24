@@ -121,6 +121,7 @@ p {
   margin-top: -10vh;
   padding: 5rem 5rem;
   width: 100%;
+  grid-column: span 12;
   -webkit-transform: skewY(-5deg);
           transform: skewY(-5deg);
 }
@@ -131,6 +132,7 @@ p {
 }
 
 #projects {
+  grid-column: span 12;
   padding: 5rem 5rem 10rem;
   overflow: hidden;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(61, 67, 180, 0.8)), to(rgba(131, 134, 245, 0.8))), url("../images/ceiling.jpg");
@@ -140,23 +142,26 @@ p {
           transform: skewY(-5deg);
 }
 
-#projects .row {
+#projects .container {
   -webkit-transform: skewY(5deg);
           transform: skewY(5deg);
-  height: 100%;
+  -webkit-column-gap: 5vh;
+          column-gap: 5vh;
 }
 
 #projects .card {
-  height: 100%;
+  grid-column: span 4;
+}
+
+#projects h2 {
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
 }
 
 @media only screen and (max-width: 600px) {
   #projects {
     padding-left: 0;
     padding-right: 0;
-  }
-  #projects .row .col-lg-4 {
-    margin-bottom: 2rem;
   }
 }
 

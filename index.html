@@ -15,12 +15,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="/css/simple-grid.min.css">
-    <!--bootstrap-->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="/css/grid.css">
+
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/0aecda28ba.js" crossorigin="anonymous"></script>
 
@@ -55,40 +51,29 @@
                 </div>
             </section>
             <section id="projects">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="white">Projects</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="images/ColorMyPhoto.jpg" alt="ColorMyPhoto" class="card-img-top">
-                            <h3 class="title-card">ColorMyPhoto</h3>
-                            <div class="card-body">
-                                <p class="card-text">A coloring page app that turns a photo into a coloring page.
-                                Fill in the page using a paint bucket tool and a brush tool.</p>
-                                <div class="card-btn">
-                                    <button class="btn btn-round" onclick="togglePopup('popup-1',true)">Demo</button>
-                                    <a href="https://github.com/joshchen984/Turn-Photo-into-Coloring-Page" class="btn btn-round" target="_blank" rel="noopener noreferrer">Source Code</a>
-                                </div>
-                            </div>
+                <h2 class="white">Projects</h2>
+                <div class="container">
+                    <div class="card">
+                        <img src="images/ColorMyPhoto.jpg" alt="ColorMyPhoto" class="card-img-top">
+                        <h3 class="title-card">ColorMyPhoto</h3>
+                        <p class="card-text">A coloring page app that turns a photo into a coloring page.
+                        Fill in the page using a paint bucket tool and a brush tool.</p>
+                        <div class="card-btn">
+                            <button class="btn btn-round" onclick="togglePopup('popup-1',true)">Demo</button>
+                            <a href="https://github.com/joshchen984/Turn-Photo-into-Coloring-Page" class="btn btn-round" target="_blank" rel="noopener noreferrer">Source Code</a>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="images/Text2Video.png" alt="Text2Video" class="card-img-top">
-                            <h3 class="title-card">Text2Video</h3>
-                            <div class="card-body">
-                                <p class="card-text">A web app that turns a story written by the user into a full video with images and audio.</p>
-                                <div class="card-btn">
-                                    <button class="btn btn-round" onclick="togglePopup('popup-2',true)">Demo</button>
-                                    <a href="https://github.com/joshchen984/Text2Video" class="btn btn-round" target="_blank" rel="noopener noreferrer">Source Code</a>
-                                </div>
-                            </div>
+                    <div class="card">
+                        <img src="images/Text2Video.png" alt="Text2Video" class="card-img-top">
+                        <h3 class="title-card">Text2Video</h3>
+                        <p class="card-text">A web app that turns a story written by the user into a full video with images and audio.</p>
+                        <div class="card-btn">
+                            <button class="btn btn-round" onclick="togglePopup('popup-2',true)">Demo</button>
+                            <a href="https://github.com/joshchen984/Text2Video" class="btn btn-round" target="_blank" rel="noopener noreferrer">Source Code</a>
                         </div>
                     </div>
-                    <div class="col-4"></div>
+                    <div class="card">
+                    </div>
                 </div>
             </section>
         </div>
