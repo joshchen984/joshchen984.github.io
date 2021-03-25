@@ -18,11 +18,7 @@ html{
     box-sizing: border-box;
 }
 
-.container {
-    width:100%;
-    padding:0;
-    margin:0;
-}
+
 h1,h2,h3,h4,h5{
     font-family: 'Raleway', sans-serif;
 }
@@ -85,6 +81,7 @@ html, body{
     color:white;
     background-color: $primary-color;
     border: 1px solid $highlight-color;
+    width: fit-content;
     &:hover {
         color: $highlight-color;
     }
@@ -130,7 +127,8 @@ p{
 
     .container {
         transform:skewY(5deg);
-        column-gap: 5vh;
+        column-gap: 5vw;
+        row-gap:3vh;
     }
     .card{
         grid-column: span 4;
@@ -139,13 +137,7 @@ p{
         transform:skewY(5deg);
     }
 }
-@media only screen and (max-width: 600px) {
-    #projects {
-        padding-left: 0;
-        padding-right: 0;
-    }
 
-}
 
 h2{
     font-weight:400;
@@ -157,18 +149,25 @@ h2{
     position:relative;
     background-color: white;
     padding:0 0 2rem;
-    
+    img{
+        width:100%;
+    }
 }
 .card-btn{
     text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 .card-btn *{
     font-size:1.2em;
     padding:0.7em 2em;
+    margin:0 1vw;
 }
 .card-text{
     padding:0 1rem;
     font-size:1.2rem;
+    height:6rem;
 }
 .title-card{
     position: absolute;
@@ -177,6 +176,7 @@ h2{
     top:0;
     left:0;
     margin:0;
+    font-size:2rem;
 }
 
 .popup{
@@ -236,4 +236,44 @@ img{
 }
 .white {
     color:white;
+}
+
+@media only screen and (max-width: 1200px) {
+    #projects {
+        .card{
+            grid-column:span 6;
+        }
+    }
+
+}
+@media only screen and (max-width: 992px) {
+    #projects{
+        .card{
+            grid-column:span 12;
+        }
+        .container{
+            column-gap: 0;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #projects {
+        padding: 2rem 2rem 10rem;
+        .card-btn{
+            flex-direction: column;
+            *{
+                margin:1vh 0;
+            }
+        }
+        .card-text{
+            height:7rem;
+        }
+
+    }
+    body{
+        padding:0;
+    }
+
 }

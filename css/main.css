@@ -15,12 +15,6 @@ html {
           box-sizing: border-box;
 }
 
-.container {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
 h1, h2, h3, h4, h5 {
   font-family: 'Raleway', sans-serif;
 }
@@ -92,6 +86,9 @@ html, body {
   color: white;
   background-color: #3d43b4;
   border: 1px solid #1afe49;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 [class^="btn"]:hover {
@@ -145,8 +142,9 @@ p {
 #projects .container {
   -webkit-transform: skewY(5deg);
           transform: skewY(5deg);
-  -webkit-column-gap: 5vh;
-          column-gap: 5vh;
+  -webkit-column-gap: 5vw;
+          column-gap: 5vw;
+  row-gap: 3vh;
 }
 
 #projects .card {
@@ -156,13 +154,6 @@ p {
 #projects h2 {
   -webkit-transform: skewY(5deg);
           transform: skewY(5deg);
-}
-
-@media only screen and (max-width: 600px) {
-  #projects {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 h2 {
@@ -177,18 +168,33 @@ h2 {
   padding: 0 0 2rem;
 }
 
+.card img {
+  width: 100%;
+}
+
 .card-btn {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card-btn * {
   font-size: 1.2em;
   padding: 0.7em 2em;
+  margin: 0 1vw;
 }
 
 .card-text {
   padding: 0 1rem;
   font-size: 1.2rem;
+  height: 6rem;
 }
 
 .title-card {
@@ -198,6 +204,7 @@ h2 {
   top: 0;
   left: 0;
   margin: 0;
+  font-size: 2rem;
 }
 
 .popup {
@@ -263,5 +270,42 @@ img {
 
 .white {
   color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  #projects .card {
+    grid-column: span 6;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #projects .card {
+    grid-column: span 12;
+  }
+  #projects .container {
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #projects {
+    padding: 2rem 2rem 10rem;
+  }
+  #projects .card-btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #projects .card-btn * {
+    margin: 1vh 0;
+  }
+  #projects .card-text {
+    height: 7rem;
+  }
+  body {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
