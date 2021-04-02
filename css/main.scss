@@ -92,12 +92,6 @@ p{
     font-size: 1.5rem;
 }
 
-.row{
-    margin:auto;
-    width:100%;
-
-}
-
 #about{
     background-color:#F5F5F5;
     margin-top:-10vh;
@@ -284,6 +278,9 @@ img{
     }
     body{
         padding:0;
+    }
+    #about {
+        padding: 5rem 2rem;
     }
     .about-desc, .languages{
         grid-column: span 12;
