@@ -99,15 +99,6 @@ p {
   font-size: 1.5rem;
 }
 
-.languages {
-  text-align: center;
-}
-
-.languages img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .row {
   margin: auto;
   width: 100%;
@@ -123,9 +114,28 @@ p {
           transform: skewY(-5deg);
 }
 
-#about .row {
+#about > div {
   -webkit-transform: skewY(5deg);
           transform: skewY(5deg);
+}
+
+.about-desc {
+  grid-column: span 6;
+}
+
+.languages {
+  grid-column: span 6;
+  text-align: center;
+}
+
+.languages img {
+  width: 25%;
+  margin: 0 2%;
+}
+
+.languages img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #projects {
@@ -306,6 +316,9 @@ img {
   }
   body {
     padding: 0;
+  }
+  .about-desc, .languages {
+    grid-column: span 12;
   }
 }
 /*# sourceMappingURL=main.css.map */

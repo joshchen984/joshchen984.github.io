@@ -91,12 +91,6 @@ html, body{
 p{
     font-size: 1.5rem;
 }
-.languages{
-    text-align: center;
-    img:hover {
-        transform: scale(1.1);
-    }
-}
 
 .row{
     margin:auto;
@@ -112,8 +106,24 @@ p{
     grid-column: span 12;
     transform: skewY(-5deg);
 
-    .row {
+    & > div {
         transform:skewY(5deg);
+    }
+}
+
+.about-desc{
+    grid-column: span 6;
+}
+
+.languages{
+    grid-column: span 6;
+    text-align: center;
+    img{
+        width:25%;
+        margin: 0 2%;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -274,6 +284,9 @@ img{
     }
     body{
         padding:0;
+    }
+    .about-desc, .languages{
+        grid-column: span 12;
     }
 
 }
