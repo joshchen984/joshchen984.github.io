@@ -3,8 +3,9 @@
 
 $primary-color: rgb(61, 67, 180);
 $secondary-color: rgb(131, 134, 245);
-            $highlight-color:#1afe49;
+$highlight-color:#1afe49;
 
+/*## General Styles */
 body{
     padding:2rem;
     font-family: 'Roboto', sans-serif;
@@ -14,18 +15,43 @@ html{
     font-size: 16px;
 }
 
+html, body{
+    min-height: 100%;
+    margin:0px;
+}
+
 *, *:before, *:after {
     box-sizing: border-box;
 }
 
+.white {
+    color:white;
+}
 
+img{
+    max-width: 100%;
+}
+
+/*## Typography */
 h1,h2,h3,h4,h5{
     font-family: 'Raleway', sans-serif;
 }
+
+h2{
+    font-weight:400;
+    text-align: center;
+    font-size: 3.5em;
+}
+
 h3 {
     font-weight:500;
 }
 
+p{
+    font-size: 1.5rem;
+}
+
+/*## Header */
 #header {
     position: relative;
     margin:0px;
@@ -65,15 +91,11 @@ h3 {
     z-index:-1;
 }
 
+/*## Button */
 .btn-round{
     border-radius:25px;
 }
 
-
-html, body{
-    min-height: 100%;
-    margin:0px;
-}
 [class^="btn"] {
     padding:0.5em 1em;
     text-decoration: none;
@@ -87,11 +109,7 @@ html, body{
     }
 }
 
-
-p{
-    font-size: 1.5rem;
-}
-
+/*## About */
 #about{
     background-color:#F5F5F5;
     margin-top:-10vh;
@@ -121,6 +139,7 @@ p{
     }
 }
 
+/*## Projects */
 #projects{
     grid-column:span 12;
     padding: 5rem 5rem 10rem;
@@ -142,13 +161,7 @@ p{
     }
 }
 
-
-h2{
-    font-weight:400;
-    text-align: center;
-    font-size: 3.5em;
-}
-
+/*## Card */
 .card {
     position:relative;
     background-color: white;
@@ -183,6 +196,7 @@ h2{
     font-size:2rem;
 }
 
+/* ## Popup */
 .popup{
     top:0;
     left:0;
@@ -205,7 +219,7 @@ h2{
     transform: translate(-50%,-50%);
 }
 
-
+/*## Footer */
 .footer{
     padding:1.5rem;
     text-align: center;
@@ -235,13 +249,7 @@ h2{
     font-size:4rem;
 }
 
-img{
-    max-width: 100%;
-}
-.white {
-    color:white;
-}
-
+/* ## Media Queries */
 @media only screen and (max-width: 1200px) {
     #projects {
         .card{
