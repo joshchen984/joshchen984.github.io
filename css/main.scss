@@ -229,6 +229,10 @@ p{
     width:100%;
     height:10rem;
     
+    & > *{
+        margin: auto;
+    }
+
     a {
         text-decoration: none;
         color:white;
